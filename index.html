@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #f2e2f2, #d8d8f8, #b7e8ed);
+            margin: 0;
+            padding: 0;
+            animation: fadeOut 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h3 {
+            opacity: 0;
+            animation: slideDown 1s forwards;
+        }
+
+        @keyframes slideDown {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: 'Times New Roman';
+            opacity: 0;
+            animation: slideDown 1s forwards;
+            transition: color 0.3s, transform 0.3s;
+        }
+        h2:hover {
+            color: #1a73e8;
+            transform: scale(1.1);
+        }
+
+
+        h1 {
+            text-align: left;
+            padding-left: 50px;
+            color: #740000;
+            opacity: 0;
+            animation: fadeInLeft 1.5s forwards;
+        }
+
+        @keyframes fadeInLeft {
+            0% { transform: translateX(-20px); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        th, td {
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        th {
+            border: 1px solid rgb(199, 226, 250);
+            border-collapse: collapse;
+            background-color: rgb(227, 255, 220);
+        }
+
+        img {
+            float: right;
+            margin-left: 30px;
+            animation: fadeInZoom 2s forwards;
+        }
+
+        @keyframes fadeInZoom {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        li {
+            background-color: rgb(141, 161, 179);
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            display: flex;
+            justify-content: start;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        li:hover {
+            background-color: rgb(121, 141, 159);
+            transform: scale(1.05);
+        }
+
+        li.completed {
+            text-decoration: line-through;
+            color: #490000;
+        }
+
+        li a {
+            color: #aacefd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+            color: #1a73e8;
+        }
+
+        .input-container input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .input-container input[type="text"]:focus {
+            border-color: #1a73e8;
+        }
+
+        .input-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            border: none;
+            background-color: #1a73e8;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .input-container button:hover {
+            background-color: #155db2;
+        }
+    </style>
+</head>
+<body>
+    <!-- The original HTML content goes here -->
+</body>
+</html>
+
+</head>
+<body>
+    <!-- Header -->
+    <div>
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <div>
+        <tr>
+            <td align="center" style="background-color: rgb(159, 208, 251);">
+                <h2 style="font-size: 40px;" style="font-family: 'Times New Roman';">PLANNER</h2>
+                <h3 align="right">
+                    Chandrima Kirtania
+                    RA2211028010081
+                </h3>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <div>
+        <!-- Schedule Section -->
+        <table border="0" width="60%" height="300%" cellpadding="10" cellspacing="0">
+            <img src="image.svg" alt="Trulli"   width="500" height="350" style="float: right; margin-left: 30px;">
+            <style>
+                th {
+                  border:1px solid rgb(199, 226, 250);
+                  border-collapse: collapse;
+                  
+                }
+                </style>
+                <td colspan="11">
+                    <h1 style="font-family: 'Times New Roman';" style="text-align: justify;">SCHEDULE</h1>
+                </td>
+            <tr>
+                <th style="background-color: rgb(227, 255, 220);">Day Order</th>
+                <th style="background-color: rgb(227, 255, 220);">8:00-8:50</th>
+                <th style="background-color: rgb(227, 255, 220);">8:55-9:45</th>
+                <th style="background-color: rgb(227, 255, 220);">9:50-10:40</th>
+                <th style="background-color: rgb(227, 255, 220);">10:45-11:35</th>
+                <th style="background-color: rgb(227, 255, 220);">11:40-12:25</th>
+                <th style="background-color: rgb(227, 255, 220);">12:30-1:20</th>
+                <th style="background-color: rgb(227, 255, 220);">1:25-2:15</th>
+                <th style="background-color: rgb(227, 255, 220);">2:15-3:05</th>
+                <th style="background-color: rgb(227, 255, 220);">3:10-4:00</th>
+                <th style="background-color: rgb(227, 255, 220);">4:05-4:55</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(227, 255, 220);">DO1</th>
+                <th style="background-color: rgb(255, 248, 239);">CN</th>
+                <th style="background-color: rgb(255, 248, 239);">CN</th>
+                <th style="background-color: rgb(255, 248, 239);">BD</th>
+                <th style="background-color: rgb(255, 248, 239);">BD</th>
+                <th style="background-color: rgb(255, 248, 239);">TQM</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(227, 255, 220);">DO2</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(248, 232, 211);">CN</th>
+                <th style="background-color: rgb(248, 232, 211);">CN</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);">FS</th>
+                <th style="background-color: rgb(255, 248, 239);">TQM</th>
+                <th style="background-color: rgb(255, 248, 239);">TQM</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(227, 255, 220);">DO3</th>
+                <th style="background-color: rgb(255, 248, 239);">MATHS</th>
+                <th style="background-color: rgb(255, 248, 239);">MATHS</th>
+                <th style="background-color: rgb(255, 248, 239);">CN</th>
+                <th style="background-color: rgb(255, 248, 239);">FLA</th>
+                <th style="background-color: rgb(255, 248, 239);">FS</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(227, 255, 220);">DO4</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);">FLA</th>
+                <th style="background-color: rgb(255, 248, 239);">FLA</th>
+                <th style="background-color: rgb(255, 248, 239);">FS</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);">MATHS</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(208, 255, 196);">DO4</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);">MATHS</th>
+                <th style="background-color: rgb(255, 248, 239);">BD</th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+                <th style="background-color: rgb(255, 248, 239);"></th>
+            </tr>
+        </table>
+
+    
+    </div>
+    <div>  
+        
+        <table border="0" width="60%" height="300%" cellpadding="10" cellspacing="0">    
+            
+            <style>
+                h1 {
+                    text-align: left;
+                    padding-left: 50px;
+                    color: #740000;
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                li {
+                    background-color: rgb(141, 161, 179);
+                    border: 1px solid #ddd;
+                    margin: 10px ;
+                    padding: 10px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: start;
+                }
+                li input[type="checkbox"] {
+                    margin-right: 10px;
+                }
+                li.completed {
+                    text-decoration: line-through;
+                    color: #490000;
+                }
+            </style>
+            <h1>TO-DO LIST</h1>
+            <ul>
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    Buy groceries
+                </li>
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    Complete React project
+                </li>
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    Call Mom
+                </li>
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    Read a book
+                </li>
+            </ul>
+        </table>
+    </div>
+    <div>
+        <table border="0" width="60%" cellpadding="10" cellspacing="0">
+
+            <style>
+                h1 {
+                    text-align: left;
+                    padding-left: 50px;
+                    color: #000000;
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    padding-right: 1050px;
+                    padding-left: 10px;
+                }
+                li {
+                    background-color: rgb(151, 213, 225);
+                    border: 1px solid #ddd;
+                    margin: 10px 0;
+                    padding: 10px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: start;
+                }
+                li a {
+                    color: #112c4f;
+                    text-decoration: none;
+                }
+                li a:hover {
+                    text-decoration: underline;
+                }
+                li input[type="checkbox"] {
+                    margin-right: 23px;
+                }
+                li.completed {
+                    text-decoration: line-through;
+                    color: #490000;
+                }
+                .input-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                .input-container input[type="text"] {
+                    width: 70%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                }
+                .input-container button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    margin-left: 10px;
+                    border: none;
+                    background-color: #063068;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 4px;
+                }
+                .input-container button:hover {
+                    background-color: #05274d;
+                }
+            </style>
+            <h1>TO WATCH</h1>
+            <ul id="watchList">
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev" target="_blank">FLA</a>
+                </li>
+                <li>
+                    <input type="checkbox" onclick="this.parentElement.classList.toggle('completed')"> 
+                    <a href="https://youtu.be/5ZhNmKb-dqk?si=KUCHQsFU-ZKeMc-k" target="_blank">MATHS</a>
+                </li>
+            </ul>
+        </table>
+    </div>
+
+    
+
+</body>
+</html>
